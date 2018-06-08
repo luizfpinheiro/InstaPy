@@ -1592,10 +1592,10 @@ class InstaPy:
 
     def follow_user_followers(self,
                               usernames,
-                              amount=10,
+                              amount=1,
                               randomize=False,
                               interact=False,
-                              sleep_delay=600):
+                              sleep_delay=random.randint(50, 170)):
 
         userFollowed = []
         if not isinstance(usernames, list):
